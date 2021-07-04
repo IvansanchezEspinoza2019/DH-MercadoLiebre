@@ -63,10 +63,12 @@ header{
 }
 
 .descuento{
-    font-size: 16px;
     margin-top: 2px;
     color: #39b54a;
     width: 70%;
+}
+.precio, .descuento{
+    font-size: 18px;
 }
 .descr{
     display: none;
@@ -91,7 +93,6 @@ main i{
 }
 
 #menu{
-
     font-size: 100%;
     display: block;
     margin: auto;
@@ -241,6 +242,9 @@ article{
 
 
 /*Login form*/
+#login-form h2{
+    margin-top: 40px;
+}
 #login-form .user input{ 
     margin-top: 50px;
     width: 60%;
@@ -321,7 +325,7 @@ article i{
     transition: transform 1s;
 }
 article .descr{
-    transition: display 100ms;
+    transition: display 2s;
 }
 article{
     transition: box-shadow 1s;
@@ -338,6 +342,7 @@ article:hover{
     box-shadow: 0px 0px 40px rgb(100,100,100); /* difumina una sombra alrededor */
 }
 footer{
+    font-size: 16px;
     padding-top: 40px;
     background-color: white;
 }
@@ -440,8 +445,11 @@ footer i:hover{
         width: 400px;
         max-width: 350;
     }
+    .precio{
+        margin-right: 25px;
+    }
     .precio, .descuento{
-        font-size: 12px;
+        font-size: 16px;
     }
     .hd-top-bar, .hd-bottom-bar{
         max-width: 1200px;
