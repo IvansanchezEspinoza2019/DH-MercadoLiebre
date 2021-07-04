@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+    
+        <!-- Font family -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <!-- Importar iconos -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link  href="/static/css/styles.css" rel="stylesheet"> <!-- Stilos del sitio -->
+        
+    </head>
+<body>
+    <header >
+        
+        <br>
+        <br>
+        <div class="both">
+            <img src="static/images/logo-mercado-liebre.svg" alt="" id="logo">
+            <div class="search-bar">
+                <input placeholder="Buscar productos, marcas"><i class="fas fa-search"></i>
+            </div>
+                <p id="compra"><i class="fas fa-money-bill"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        
+    
+       </div>
+       <br>
+       <nav class="hd-bottom-bar">
+        <ul class="left-nav-var">
+            <li><a href="/">Ofertas</a> </li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayudar</a></li>
+        </ul>
+
+        <ul class="right-nav-bar">
+            <li><a href="#">Crea tu cuenta </a> <i class="fas fa-user-circle"></i></li>
+            <li><a href="/getIn">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="#">Mis compras <i class="far fa-credit-card"></i></a></li>
+            
+        </ul>
+    </nav>
+        <i id="menu" class="fas fa-bars"></i>
+        <br>
+        
+    </header>
+    <img id="banner" src="/static/images/img-home-banner.jpg">
+    <main>
+        <form action="/" id="register-form">
+
+            <div class="name">
+                <input type="text" placeholder="Nombre y appellido" required> 
+            </div>
+
+            <div class="email">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="user">
+                <input type="text" placeholder="Nombre de usuario" required>
+            </div>
+           
+            <div class="date">
+                <label for="date">Fecha de nacimiento</label>
+                <br>
+                <input type="date" name="date" required>
+            </div>
+            
+
+            <div class="address">
+                <label for="domicilio">Domicilio</label>
+                <br>
+                <textarea rows="3" required id="domicilio" name="domicilio">
+                </textarea>
+            </div>
+            
+            <div class="profile">
+                <label for="perfil">Perfil</label>
+                <br>
+                <div>
+                <input type="radio" name="perfil" value="Vendedor" required> Vendedor
+                </div>
+                <div>
+                    <input type="radio" name="perfil" value="Comprador"> Comprador
+                </div>
+            </div>
+           
+            
+            <div class="interest">
+                <label for="intereses">Intereses</label>
+                <div>
+                    <input type="checkbox" name="intereses" value="electro" >Electro
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="moda"> Moda
+                </div>
+                <div>
+                    <input type="checkbox" name="intereses" value="hogar"> Hogar
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="intereses" value="jugueteria"> Jugeteria
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="intereses" value="vida sana"> Vida sana
+                </div>
+            </div>
+          
+            <div class="img-user">
+                <label for="foto">Fotografía de perfil</label>
+                <div class="foto">
+                    <input type="file" accept=".jpg, .png, .jpeg" name="foto" id="foto" required>
+                </div>
+            </div>
+           <div class="user-password">
+                <label>Contraseña</label>
+                <div class="password">
+                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <div class="password-conf">
+                    <input type="password" name="password" id="password" placeholder="Confirmar contraseña" required>
+                </div>
+           </div>
+            
+           <div class="btts">
+                <input type="submit" value="Enviar" id="submit">
+                <input type="reset" value="Borrar">
+           </div>
+            
+
+        </form>
+    
+    </main>
+
+</body>
+</html>
