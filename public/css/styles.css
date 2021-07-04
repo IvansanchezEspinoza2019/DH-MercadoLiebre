@@ -242,7 +242,12 @@ article{
 
 
 /*Login form*/
+#login-form{
+    background-color: white;
+    text-align: center;
+}
 #login-form h2{
+    padding-top: 25px;
     margin-top: 40px;
 }
 #login-form .user input{ 
